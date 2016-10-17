@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Eseoneline</string>
+    <string name="eseo_covoit">eseo covoit</string>
+    <string name="news">News</string>
+    <string name="plan">Plan</string>
+    <string name="qui_sommes_nous">Qui sommes-nous?</string>
+    <string name="mon_compte">Mon compte</string>
+    <string name="eseomiam">EseoMiam</string>
+    <string name="m_t_o">Météo</string>
+    <string name="eseologement">EseoLogement</string>
+    <string name="calendrier">Calendrier</string>
+    <string name="english">English</string>
+    <string name="fran_ais">Français</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
 </resources>
