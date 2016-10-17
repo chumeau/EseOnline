@@ -3,15 +3,17 @@
  *
  */
 
-package faralhumeau.eseoneline;
+package faralhumeau.eseoneline.calendar;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class EseoLogementActivity  extends AppCompatActivity {
+import faralhumeau.eseoneline.R;
+
+public class CalendarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accommodation);
+        setContentView(R.layout.activity_calendar);
     }
 }

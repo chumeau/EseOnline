@@ -3,10 +3,12 @@
  *
  */
 
-package faralhumeau.eseoneline;
+package faralhumeau.eseoneline.service;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import faralhumeau.eseoneline.R;
 
 public class EseoCovoitActivity extends AppCompatActivity {
     @Override

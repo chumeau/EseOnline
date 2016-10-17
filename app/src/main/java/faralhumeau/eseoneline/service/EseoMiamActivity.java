@@ -3,15 +3,17 @@
  *
  */
 
-package faralhumeau.eseoneline;
+package faralhumeau.eseoneline.service;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class WeatherActivity extends AppCompatActivity {
+import faralhumeau.eseoneline.R;
+
+public class EseoMiamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather);
+        setContentView(R.layout.activity_eseomiam);
     }
 }

@@ -11,6 +11,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import faralhumeau.eseoneline.account.AccountActivity;
+import faralhumeau.eseoneline.calendar.CalendarActivity;
+import faralhumeau.eseoneline.eseo.EseoActivity;
+import faralhumeau.eseoneline.map.MapActivity;
+import faralhumeau.eseoneline.news.NewsActivity;
+import faralhumeau.eseoneline.service.EseoCovoitActivity;
+import faralhumeau.eseoneline.service.EseoLogementActivity;
+import faralhumeau.eseoneline.service.EseoMiamActivity;
+import faralhumeau.eseoneline.weather.WeatherActivity;
+
 public class MainActivity extends AppCompatActivity {
     private ImageButton _map;
     private ImageButton _news;
