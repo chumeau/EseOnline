@@ -25,6 +25,7 @@
             <ImageButton
 
                     app:srcCompat="@mipmap/ic_france_flag"
+                    android:id="@+id/imageButtonFrancais"
                     android:background="@color/colorWhitLight"
                     android:scaleType="fitXY"
                     android:contentDescription="@string/fran_ais"
@@ -70,7 +71,8 @@
                     android:id="@+id/imageButtonNews"
                     android:background="@color/colorWhitLight"
                     android:scaleType="fitXY"
-                    android:contentDescription="@string/news" />
+                    android:contentDescription="@string/news"
+                    android:onClick="newsListener"/>
 
             <TextView
                     android:text="@string/news"
@@ -87,7 +89,8 @@
                     android:background="@color/colorWhitLight"
                     android:scaleType="fitXY"
                     android:contentDescription="@string/mon_compte"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginTop="30dp"
+                    />
 
             <TextView
                     android:text="@string/mon_compte"
