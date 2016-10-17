@@ -1,22 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="faralhumeau.eseoneline.MainActivity">
-
-    <Button
-        android:text="Button"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginTop="58dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="22dp" />
-</RelativeLayout>
+        android:background="@color/colorWhitLight"
+        android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="horizontal">
+
+            <ImageButton
+
+                    app:srcCompat="@mipmap/ic_france_flag"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/fran_ais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp" />
+
+            <ImageButton
+                    app:srcCompat="@mipmap/ic_uk_flag"
+                    android:id="@+id/imageButtonEnglish"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_news"
+                    android:id="@+id/imageButtonNews"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/news" />
+
+            <TextView
+                    android:text="@string/news"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMap"
+                    android:gravity="center_vertical|center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_user"
+                    android:id="@+id/imageButtonUser"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/mon_compte"
+                    android:layout_marginTop="30dp" />
+
+            <TextView
+                    android:text="@string/mon_compte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textNews"
+                    android:gravity="center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_eseomiam"
+                    android:id="@+id/imageButtonEseoMiam"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseomiam"
+                    android:layout_marginTop="30dp" />
+
+            <TextView
+                    android:text="@string/eseomiam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCovoit"
+                    android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp">
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_whateseo"
+                    android:id="@+id/imageButtonEseo"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/qui_sommes_nous" />
+
+            <TextView
+                    android:text="@string/qui_sommes_nous"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textEseo"
+                    android:gravity="center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_weather"
+                    android:id="@+id/imageButtonWeather"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/m_t_o"
+                    android:layout_marginTop="15dp" />
+
+            <TextView
+                    android:text="@string/m_t_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMeteo"
+                    android:gravity="center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_accommodation"
+                    android:id="@+id/imageButtonAccomodation"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseologement"
+                    android:layout_marginTop="30dp" />
+
+            <TextView
+                    android:text="@string/eseologement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLogement"
+                    android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp">
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_map"
+                    android:id="@+id/imageButtonMap"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/plan" />
+
+            <TextView
+                    android:text="@string/plan"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:gravity="center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_calendar"
+                    android:id="@+id/imageButtonCalendar"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/calendrier"
+                    android:layout_marginTop="30dp" />
+
+            <TextView
+                    android:text="@string/calendrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:gravity="center" />
+
+            <ImageButton
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    app:srcCompat="@mipmap/ic_covoit"
+                    android:id="@+id/imageButtonCovoit"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseo_covoit"
+                    android:layout_marginTop="30dp" />
+
+            <TextView
+                    android:text="@string/eseo_covoit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:orientation="horizontal"
+            android:layout_marginStart="180dp">
+
+        <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_facebook"
+                android:id="@+id/imageButtonFacebook"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/facebook" />
+        <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_twitter"
+                android:id="@+id/imageButtonTwitter"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/twitter" />
+        <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_youtube"
+                android:id="@+id/imageButtonYoutube"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/facebook" />
+    </LinearLayout>
+</LinearLayout>
