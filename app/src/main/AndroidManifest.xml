@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".account.AccountActivity"/>
+        <activity android:name=".calendar.CalendarActivity"/>
+        <activity android:name=".eseo.EseoActivity"/>
+        <activity android:name=".map.MapActivity"/>
+        <activity android:name=".news.NewsActivity"/>
+        <activity android:name=".service.EseoCovoitActivity"/>
+        <activity android:name=".service.EseoMiamActivity"/>
+        <activity android:name=".service.EseoLogementActivity"/>
+        <activity android:name=".weather.WeatherActivity"/>
     </application>
 
 </manifest>
