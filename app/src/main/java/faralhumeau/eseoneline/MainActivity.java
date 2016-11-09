@@ -15,6 +15,7 @@ import faralhumeau.eseoneline.account.AccountActivity;
 import faralhumeau.eseoneline.calendar.CalendarActivity;
 import faralhumeau.eseoneline.eseo.EseoActivity;
 import faralhumeau.eseoneline.map.MapActivity;
+import faralhumeau.eseoneline.map.MapsActivity;
 import faralhumeau.eseoneline.news.NewsActivity;
 import faralhumeau.eseoneline.service.EseoCovoitActivity;
 import faralhumeau.eseoneline.service.EseoLogementActivity;
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mapListener(View v) {
-        final Intent intentMap = new Intent(MainActivity.this, MapActivity.class);
+        final Intent intentMap = new Intent(MainActivity.this, MapsActivity.class);
         startActivity(intentMap);
     }
 

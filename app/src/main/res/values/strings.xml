@@ -15,4 +15,6 @@
     <string name="twitter">Twitter</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyBW50G9a2XwmnnAy_o6j3F6wowrmNN7Zhk</string>
 </resources>
