@@ -1,19 +1,14 @@
-/**
- * Created by EseOnline on 17/10/2016.
- *
- */
-
-package faralhumeau.eseoneline.map;
+package faralhumeau.eseoneline.plan;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
 import faralhumeau.eseoneline.R;
 
-public class MapActivity extends AppCompatActivity {
+public class Plan1EtageActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        setContentView(R.layout.activity_plan_1etage);
     }
 }

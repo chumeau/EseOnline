@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_plan_eseo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="faralhumeau.eseoneline.plan.PlanEseoActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="58dp"
+            android:layout_centerInParent="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutSS">
+
+            <Button
+                    android:text="@string/sous_sol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonSS"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="ssSolListener"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LayoutRDC"
+                android:layout_below="@id/LayoutSS">
+
+            <Button
+                    android:text="@string/rdc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/buttonRDC"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="rdcListener"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Layout1E"
+                android:layout_below="@id/LayoutRDC">
+
+            <Button
+                    android:text="@string/_1er_etage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/button1E"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="e1Listener"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Layout2E"
+                android:layout_below="@id/Layout1E">
+
+            <Button
+                    android:text="@string/_2_me_etage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/button2E"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="e2Listener"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Layout3E"
+                android:layout_below="@id/Layout2E">
+
+            <Button
+                    android:text="@string/_3_etage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/button3E"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="e3Listener"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Layout4E"
+                android:layout_below="@id/Layout3E">
+
+            <Button
+                    android:text="@string/_4_etage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/button4E"
+                    android:textSize="@dimen/textSize_button_plan"
+                    android:onClick="e4Listener"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

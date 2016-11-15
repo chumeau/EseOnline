@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhitLight"
+        android:orientation="vertical">
+    <RelativeLayout
+            android:id="@+id/LayoutLanguages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp">
+
+        <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutFrench"
+                android:background="@color/colorWhitLight">
+
+            <ImageButton
+
+                    app:srcCompat="@mipmap/ic_france_flag"
+                    android:id="@+id/imageButtonFrancais"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/fran_ais"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/layoutEnglish"
+                android:background="@color/colorWhitLight"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/layoutFrench">
+            <ImageButton
+                    app:srcCompat="@mipmap/ic_uk_flag"
+                    android:id="@+id/imageButtonEnglish"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/english"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:orientation="horizontal"
+            android:layout_centerInParent="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/linearLayoutIcon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="12dp">
+
+        <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@mipmap/ic_facebook"
+                android:id="@+id/imageButtonFacebook"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/facebook"/>
+        <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@mipmap/ic_twitter"
+                android:id="@+id/imageButtonTwitter"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/twitter" />
+        <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@mipmap/ic_youtube"
+                android:id="@+id/imageButtonYoutube"
+                android:background="@color/colorWhitLight"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/facebook" />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/linearLayoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhitLight"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/LayoutLanguages"
+            android:layout_centerHorizontal="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="20dp">
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_news"
+                    android:id="@+id/imageButtonNews"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/news"
+                    android:onClick="newsListener"/>
+
+            <TextView
+                    android:text="@string/news"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMap"
+                    android:gravity="center_vertical|center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_user"
+                    android:id="@+id/imageButtonUser"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/mon_compte"
+                    android:layout_marginTop="30dp"
+                    android:onClick="accountListener"
+                    />
+
+            <TextView
+                    android:text="@string/mon_compte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textNews"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_eseomiam"
+                    android:id="@+id/imageButtonEseoMiam"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseomiam"
+                    android:layout_marginTop="30dp"
+                    android:onClick="eseoMiamListener"/>
+
+            <TextView
+                    android:text="@string/eseomiam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCovoit"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:weightSum="1">
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_whateseo"
+                    android:id="@+id/imageButtonEseo"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/qui_sommes_nous"
+                    android:onClick="eseoListener"
+                    android:layout_gravity="center_horizontal" />
+
+            <TextView
+                    android:text="@string/qui_sommes_nous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textEseo"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_weather"
+                    android:id="@+id/imageButtonWeather"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/m_t_o"
+                    android:layout_marginTop="15dp"
+                    android:onClick="weatherListener"
+                    android:layout_gravity="center_horizontal" />
+
+            <TextView
+                    android:text="@string/m_t_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMeteo"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_accommodation"
+                    android:id="@+id/imageButtonAccomodation"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseologement"
+                    android:layout_marginTop="30dp"
+                    android:onClick="eseoLogementListener"
+                    android:layout_gravity="center_horizontal" />
+
+            <TextView
+                    android:text="@string/eseologement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLogement"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhitLight"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_alignParentEnd="true">
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_map"
+                    android:id="@+id/imageButtonMap"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/plan"
+                    android:onClick="mapListener"/>
+
+            <TextView
+                    android:text="@string/plan"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_calendar"
+                    android:id="@+id/imageButtonCalendar"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/calendrier"
+                    android:layout_marginTop="30dp"
+                    android:onClick="calendarListener"/>
+
+            <TextView
+                    android:text="@string/calendrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp" />
+
+            <ImageButton
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:srcCompat="@mipmap/ic_covoit"
+                    android:id="@+id/imageButtonCovoit"
+                    android:background="@color/colorWhitLight"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/eseo_covoit"
+                    android:layout_marginTop="30dp"
+                    android:onClick="eseoCovoitListener"/>
+
+            <TextView
+                    android:text="@string/eseo_covoit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
