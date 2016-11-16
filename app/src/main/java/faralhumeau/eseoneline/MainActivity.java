@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import faralhumeau.eseoneline.account.AccountActivity;
+import faralhumeau.eseoneline.account.LoginActivity;
 import faralhumeau.eseoneline.calendar.CalendarActivity;
 import faralhumeau.eseoneline.eseo.EseoActivity;
 import faralhumeau.eseoneline.map.MapsActivity;
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void accountListener(View v) {
-        final Intent intentAccount = new Intent(MainActivity.this, AccountActivity.class);
+        final Intent intentAccount = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intentAccount);
     }
 
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void eseoMiamListener(View v) {
-        final Intent intentEseoMiam = new Intent(MainActivity.this, EseoMiamActivity.class);
+        final Intent intentEseoMiam = new Intent(MainActivity.this, MapsActivity.class);
         startActivity(intentEseoMiam);
     }
 
